@@ -1,0 +1,10 @@
+^C:\USERS\MESABG\WORK\COMPUTER-SCIENCE\MSKELETONIZER\TEST\BONE_HEAT_TEST\BUILD\CMAKEFILES\016A76A63768BB863A313E5EAF60D2EC\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mesabg/Work/computer-science/MSkeletonizer/test/bone_heat_test -BC:/Users/mesabg/Work/computer-science/MSkeletonizer/test/bone_heat_test/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/mesabg/Work/computer-science/MSkeletonizer/test/bone_heat_test/build/BoneHeat.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
